@@ -1,4 +1,6 @@
-import java.util.ArrayList;
+/*
+ * Класс, работающий с векторами в пятимерном пространстве и расширяющий методы класса Vector
+ */
 
 public class Vector5d extends Vector {
 

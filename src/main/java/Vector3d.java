@@ -1,7 +1,11 @@
-import java.util.ArrayList;
-
+/*
+ * Класс, работающий с векторами в трехмерном пространстве и расширяющий методы класса Vector
+ */
 public class Vector3d extends Vector {
 
+    /*
+     * Конструктор
+     */
     public Vector3d(int x, int y, int z) {
         super(x, y, z);
     }

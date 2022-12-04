@@ -1,4 +1,6 @@
-
+/*
+ * Класс, работающий с векторами в n-мерном пространстве и расширяющий методы класса Vector
+ */
 public class VectorNd extends Vector {
 
     public VectorNd(int... coord) {
@@ -11,41 +13,37 @@ public class VectorNd extends Vector {
     }
 
     @Override
-    public VectorNd addition(Vector vSecond) throws IllegalArgumentException{
-        if (dimension.equals(vSecond.dimension)){
+    public VectorNd addition(Vector vSecond) throws IllegalArgumentException {
+        if (dimension.equals(vSecond.dimension)) {
             return (VectorNd) super.addition(vSecond);
-        }
-        else{
+        } else {
             throw new IllegalArgumentException("Вектора имеют разные размеры");
         }
     }
 
     @Override
     public VectorNd subtraction(Vector vSecond) {
-        if (dimension.equals(vSecond.dimension)){
+        if (dimension.equals(vSecond.dimension)) {
             return (VectorNd) super.subtraction(vSecond);
-        }
-        else{
+        } else {
             throw new IllegalArgumentException("Вектора имеют разные размеры");
         }
     }
 
     @Override
     public int scalarProduct(Vector vSecond) {
-        if (dimension.equals(vSecond.dimension)){
+        if (dimension.equals(vSecond.dimension)) {
             return super.scalarProduct(vSecond);
-        }
-        else{
+        } else {
             throw new IllegalArgumentException("Вектора имеют разные размеры");
         }
     }
 
     @Override
     public Boolean comparisonByCoordinates(Vector vSecond) {
-        if (dimension.equals(vSecond.dimension)){
+        if (dimension.equals(vSecond.dimension)) {
             return super.comparisonByCoordinates(vSecond);
-        }
-        else{
+        } else {
             throw new IllegalArgumentException("Вектора имеют разные размеры");
         }
     }
