@@ -17,8 +17,10 @@ public abstract class Vector implements Vectors {
 
     abstract Vector createVector(int[] coord);
 
-    /*
+    /**
      * Конструктор
+     *
+     * @param vector координаты вектора
      */
     public Vector(int... vector) {
         this.coordinates = vector;
